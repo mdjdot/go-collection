@@ -11,10 +11,16 @@
 [![GitHub issues](https://img.shields.io/github/issues/jiujuan/go-collection)](https://github.com/jiujuan/go-collection/issues)
 
 
-收录的awesome项目，学习基础系列，go项目实战，go源码分析，go开发者成长路线图等等，把他们收集起来学习。
+> 收录的awesome-go项目，学习基础系列，go项目实战，go源码分析，go开发者成长路线图等等，把他们收集起来学习。
 
-觉得好，请给我一个 Star！ :star:
+:speaker: 觉得对您学习golang有帮助，请给我点一个 Star！ :star:
 
+
+:mega: :mega: :mega:
+
+- :pencil2: 如果有的链接失效了，可以给我发[issues](https://github.com/jiujuan/go-collection/issues)，灰常感谢！
+
+- :memo: 如果您觉得有好的golang教程、源码分析文章、书籍等等，都可以给我发[issues](https://github.com/jiujuan/go-collection/issues)，灰常感谢！
 
 ## 目录
 
@@ -23,12 +29,22 @@
 - [go基础学习系列](#go基础学习系列)
 - [go标准库](#go标准库)
 - [go项目实战](#go项目实战)
-- [go源码分析](#go源码分析)
+- [go架构和源码分析](#go架构和源码分析)
 - [微服务](#微服务)
-  - [go-micro](#go-micro)
+  - [nitro(原go-micro)](#nitro)
   - [go-kit](#go-kit)
+  - [Stack-Labs](#Stack-Labs)
+ 
+  - [go-zero](#go-zero)
   - [kratos](#kratos)
+  - [go-chassis](#go-chassis)
+  - [Jupiter](#jupiter)
+  - [TarsGo](#tarsgo)
+  
+  - [odin](#odin)
+- [rpc](#rpc)
 - [Go书籍](#Go书籍)
+- [常见问题和错误](#常见问题和错误)
 - [其他](#其他)
 
 
@@ -57,14 +73,16 @@
 
 - [go语言快速入门](https://github.com/jaywcjlove/golang-tutorial)
 - [go tour](https://tour.golang.org/welcome/1)
-- [go tour 中文版](https://tour.go-zh.org/welcome/1)
+  - [go tour 中文版](https://tour.go-zh.org/welcome/1)
 - [Go by Example](https://gobyexample.com/)
 - [Go基础编程-by无闻](https://github.com/Unknwon/go-fundamental-programming)
 - [Go语言实战笔记](https://github.com/rujews/go-in-action-notes)
 - [golang bootcamp](http://www.golangbootcamp.com/book)
 - [study Go programming language](https://tutorialedge.net/course/golang/) 
 - [common mistakes in golang](http://devs.cloudimmunity.com/gotchas-and-common-mistakes-in-go-golang/) go初学者经常犯的错误
-- [Learn Go with test-driven development](https://github.com/quii/learn-go-with-tests)  [gitbook版](https://quii.gitbook.io/learn-go-with-tests) [中文版](https://studygolang.gitbook.io/learn-go-with-tests)
+- [Learn Go with test-driven development](https://github.com/quii/learn-go-with-tests)  
+  - [gitbook版](https://quii.gitbook.io/learn-go-with-tests) 
+  - [中文版](https://studygolang.gitbook.io/learn-go-with-tests)
 - [golang program](http://www.golangprograms.com)
 - [golang 项目实战简明指南](http://litang.me/post/golang-project-guide/)
 - [go语言基础学习](https://blog.csdn.net/u010986776/article/category/8000832)
@@ -82,45 +100,97 @@
   
 ## go项目实战
 
-- [go小项目实战系列](https://blog.csdn.net/u010986776/article/category/8095305)
+- [go小项目实战系列](https://www.jianshu.com/nb/40576814)
 - [gin框架实战系列](https://youngxhui.top/categories/gin/)
   - [github代码地址](https://github.com/youngxhui/GinHello)
 - [beego框架开发轻博客实战系列](https://www.jianshu.com/nb/27703855)
 - [golang爬虫视频课程](https://www.bilibili.com/video/av31551627/)
 - [go web开发例子](https://gowebexamples.com/)
-- [使用gin和gorm框架来构建 RESTful API 微服务 英文版](https://medium.com/@thedevsaddam/build-restful-api-service-in-golang-using-gin-gonic-framework-85b1a6e176f3) [中文翻译版](https://learnku.com/golang/t/24598)
+- [使用gin和gorm框架来构建 RESTful API 微服务 en](https://medium.com/@thedevsaddam/build-restful-api-service-in-golang-using-gin-gonic-framework-85b1a6e176f3) 
+  - [中文翻译版](https://learnku.com/golang/t/24598)
 - [go语言高级实战](https://github.com/Shitaibin/golang_step_by_step)
+- [go 语言论坛实战](https://xueyuanjun.com/post/21519)
+- [beego web应用开发](https://blog.csdn.net/u010986776/category_10520963.html)
 
+## go架构和源码分析
 
-## go源码分析
+- [雨痕Go语言学习笔记](https://github.com/qyuhen/book)
+- [go-under-the-hood--欧长坤](https://github.com/changkun/go-under-the-hood/)
+  - [网站阅读版](https://changkun.de/golang/)
+- [Go 语言设计与实现 - 面向信仰编程](https://draveness.me/golang/)
 
-- [源码分析 1](https://github.com/cch123/golang-notes) 主要是源码分析，可能也会有一些使用上的知识点
+- [源码分析 1-曹大&柴大](https://github.com/cch123/golang-notes) 主要是源码分析，可能也会有一些使用上的知识点
 - [源码分析 2](https://github.com/xuesongbj/Go-Notes) go源码剖析
 - [源码分析 3](https://zhuanlan.zhihu.com/c_1010470599088594944)  [二](https://zhuanlan.zhihu.com/golang-internal) 
 - [golang数据结构内部实现](https://zhuanlan.zhihu.com/goroutine)
-- [雨痕Go语言学习笔记](https://github.com/qyuhen/book)
 - [从Questions学习Go](https://github.com/qcrao/Go-Questions/wiki)
-- 深度解密系列 [slice](https://qcrao.com/2019/04/02/dive-into-go-slice/)、[interface](https://qcrao.com/2019/04/25/dive-into-go-interface/)、[reflection](https://qcrao.com/2019/05/07/dive-into-go-reflection/)、[map](https://qcrao.com/2019/05/22/dive-into-go-map/)、[context](https://qcrao.com/2019/06/12/dive-into-go-context/)、[unsafe](https://qcrao.com/2019/06/03/dive-into-go-unsafe/)、[channel](https://qcrao.com/2019/07/22/dive-into-go-channel/)、[scheduler](https://qcrao.com/2019/09/02/dive-into-go-scheduler/)、[defer](https://qcrao.com/2019/02/12/how-to-keep-off-trap-of-defer/)、[memory](https://qcrao.com/2019/03/13/graphic-go-memory-allocation/)
-- [深度解析GPM系列 一](https://qcrao.com/2019/09/04/go-scheduler-what-is-gpm/) [二](https://qcrao.com/2019/09/04/go-scheduler-init/) [三](https://qcrao.com/2019/09/04/go-scheduler-the-birth-of-main-goroutine/) [四](https://qcrao.com/2019/09/04/go-scheduler-stack-switch-between-g0-and-user-goroutine/) [五](https://qcrao.com/2019/09/04/go-scheduler-start-schedule-cycle/)  [六](https://qcrao.com/2019/09/06/go-scheduler-life-of-goroutine/) [七](https://qcrao.com/2019/09/06/go-scheduler-cycle-of-schedul/) [八](https://qcrao.com/2019/09/06/go-scheduler-m-finds-work/) [九](https://qcrao.com/2019/09/06/go-scheduler-what-sysmon-does/) [十](https://qcrao.com/2019/09/06/go-scheduler-state-diagram-of-gpm/)
+- 深度解密系列-码农桃花源： [slice](https://www.cnblogs.com/qcrao-2018/p/10631989.html)、[interface](https://www.cnblogs.com/qcrao-2018/p/10766091.html)、[reflection](https://www.cnblogs.com/qcrao-2018/p/10822655.html)、[map](https://www.cnblogs.com/qcrao-2018/p/10903807.html)、[context](https://www.cnblogs.com/qcrao-2018/p/11007503.html)、[unsafe](https://www.cnblogs.com/qcrao-2018/p/10964692.html)、[channel](https://www.cnblogs.com/qcrao-2018/p/11220651.html)、[scheduler](https://www.cnblogs.com/qcrao-2018/p/11442998.html)、[defer](https://www.cnblogs.com/qcrao-2018/p/10367346.html)、[memory](https://www.cnblogs.com/qcrao-2018/p/10520785.html)、[sync.Pool](https://www.cnblogs.com/qcrao-2018/p/12736031.html)、[sync.map](https://www.cnblogs.com/qcrao-2018/p/12833787.html)
+- 深度解析GPM系列-码农桃花源：[1. GPM 是什么](https://qcrao91.gitbook.io/go/goroutine-tiao-du-qi/gpm-shi-shi-mo)、[2. 什么是 go schedule](https://qcrao91.gitbook.io/go/goroutine-tiao-du-qi/shi-mo-shi-go-shceduler)、[3. 什么是 M:N 模型](https://qcrao91.gitbook.io/go/goroutine-tiao-du-qi/shi-mo-shi-mn-mo-xing)、[4. 什么是 workstealing](https://qcrao91.gitbook.io/go/goroutine-tiao-du-qi/shi-mo-shi-workstealing)、[5. Schedule 的初始化过程](https://qcrao91.gitbook.io/go/goroutine-tiao-du-qi/miao-shu-scheduler-de-chu-shi-hua-guo-cheng)、[6. Schedule 循环如何启动](https://qcrao91.gitbook.io/go/goroutine-tiao-du-qi/schedule-xun-huan-ru-he-qi-dong)、[7. Schedule 循环如何运转](https://qcrao91.gitbook.io/go/goroutine-tiao-du-qi/schedule-xun-huan-ru-he-yun-zhuan)、[8. goroutine 和线程的区别](https://qcrao91.gitbook.io/go/goroutine-tiao-du-qi/goroutine-he-xian-cheng-de-qu-bie)、[9. main goroutine 如何创建](https://qcrao91.gitbook.io/go/goroutine-tiao-du-qi/mian-gorutine-ru-he-chuang-jian)、[10. g0 栈和用户栈如何切换](https://qcrao91.gitbook.io/go/goroutine-tiao-du-qi/g0-zhan-he-yong-hu-zhan-ru-he-qie-huan)、[11. goroutine 调度时机有哪些](https://qcrao91.gitbook.io/go/goroutine-tiao-du-qi/goroutine-tiao-du-shi-ji-you-na-xie)、[12. M 如何找工作](https://qcrao91.gitbook.io/go/goroutine-tiao-du-qi/m-ru-he-zhao-gong-zuo)、[13. sysmon 后台监控线程做了什么](https://qcrao91.gitbook.io/go/goroutine-tiao-du-qi/sysmon-hou-tai-jian-kong-xian-cheng-zuo-le-shi-mo)、[14. goroutine 如何退出](https://qcrao91.gitbook.io/go/goroutine-tiao-du-qi/goroutine-ru-he-tui-chu)、[15. 一个调度相关的陷阱](https://qcrao91.gitbook.io/go/goroutine-tiao-du-qi/yi-ge-tiao-du-xiang-guan-de-xian-jing)
 
+- [go 程序是怎么跑起来的?](https://www.cnblogs.com/qcrao-2018/p/11124360.html)
+  
 
 ## 微服务
 
-## go-micro
-- [Micro教程系列](https://github.com/micro-in-cn/tutorials)
-- [Micro最佳实践](https://github.com/micro-in-cn/all-in-one) Micro最佳实践，我们尝试由浅入深，从基础篇开始，每个目录对应一个级别的示例。
-- [Micro中文文档](https://micro.mu/docs/cn/index.html)
-- [Micro中文博客](https://micro.mu/blog/cn/)
+## nitro
+> 原 go-micro 项目变更为 asim 的个人项目，名字改为 [nitro](https://github.com/asim/nitro)。
+
+- [nitro(原go-micro)](https://github.com/asim/nitro)
+- [nitro site](https://gonitro.dev/)
+
+- [micro](https://github.com/micro/micro)
+- [Learn Micro by examples](https://github.com/micro/examples)
+- [microhq](https://medium.com/microhq)
 
 ## go-kit
 
+- [go-kit](https://github.com/go-kit/kit)
 - [go-kit系列教程](https://juejin.im/post/5c861c93f265da2de7138615)
 - [go-kit与grpc结合开发微服务](http://www.articlechain.cn/post/46.html)
-- [go-kit cn](http://go-kit.cn/)
+
+## Stack-Labs
+> 由于 go-micro 停更，中国团队基于 go-micro 1.18修改，开发了第一版 stack-rpc。该项目于 2020 年 11 月 2 日正式成立。[github](https://github.com/stack-labs/stack-rpc)
+
+- [Stack Labs](https://github.com/stack-labs)
+- [stack-rpc](https://github.com/stack-labs/stack-rpc)
+- [Micro-blog](https://medium.com/microhq)
+
+- [Stack Labs site](https://microhq.cn/index-cn)
+- [stack-rpc-tutorials](https://github.com/stack-labs/stack-rpc-tutorials)
+- [stack-rpc Docs](https://microhq.cn/docs/micro/introduce-cn) 
+
+## go-zero
+- [go-zero](https://github.com/tal-tech/go-zero)
 
 ## kratos
-- [kratos](https://github.com/bilibili/kratos) bilibili开源的一套微服务框架
-- [kratos wiki](https://github.com/bilibili/kratos/wiki)
+- [kratos](https://github.com/go-kratos/kratos) bilibili开源的一套微服务框架
+  - [go-kratos](https://github.com/go-kratos)
+- [kratos summary](https://github.com/go-kratos/kratos/blob/master/doc/wiki-cn/summary.md)
+  - [kratos wiki](https://github.com/go-kratos/kratos/tree/master/doc/wiki-cn)
+
+## go-chassis
+- [go-chassis](https://github.com/go-chassis/go-chassis)
+
+## Jupiter
+- [Jupiter](https://github.com/douyu/jupiter) 斗鱼开源的面向服务治理的Golang微服务框架
+- [官网](http://jupiter.douyu.com/)
+
+## TarsGo
+- [TarsGo](https://github.com/TarsCloud/TarsGo) TarsGo go的微服务框架
+- [TarsCloud](https://github.com/TarsCloud) 
+- [tarscloud官网](https://tarscloud.org/) tarscloud 官网
+- [TarsFramework](https://github.com/TarsCloud/TarsFramework)
+
+
+## odin
+- [odin](https://github.com/tal-tech/odin)
+- [doc](https://www.yuque.com/tal-tech/odin/readme)
+
+## rpc
+- [gRPC-go](https://github.com/grpc/grpc-go)
+  - [grpc](https://github.com/grpc/)
+- [rpcx](https://github.com/smallnest/rpcx)
+  - [website](https://rpcx.io/)
 
 ## Go书籍
 - [go books集合](https://github.com/dariubs/GoBooks)
@@ -133,12 +203,18 @@
 - [Go Web编程](https://github.com/astaxie/build-web-application-with-golang)
 - [go实战开发](https://github.com/astaxie/go-best-practice)
 - [go语言42章经](https://github.com/ffhelicopter/Go42)
-- [go101](https://go101.org/article/101.html)  [github](https://github.com/go101/go101)
+- [go101](https://go101.org/article/101.html)  
+  - [go101 github](https://github.com/go101/go101)
+  - [中文版](https://github.com/golang101/golang101)
 - [go专家编程](https://github.com/RainbowMango/GoExpertProgramming)
 - [go under the hood](https://github.com/changkun/go-under-the-hood)
 - [Go-Mega](https://go-mega.bonfy.im/)
 
-
+## 常见问题和错误
+- [Go 语言中通道死锁经典错误案例详解](https://segmentfault.com/a/1190000022820306)
+- [Go 项目开发里最常犯的 10 个错误](https://learnku.com/articles/38669)
+- [Go新手可能会踩的50个坑](http://devs.cloudimmunity.com/gotchas-and-common-mistakes-in-go-golang/)
+  - [翻译版](https://segmentfault.com/a/1190000013739000)
 
 ## 其他
 
@@ -146,11 +222,22 @@
 - [go官方语言编码规范](https://github.com/golang/go/wiki/CodeReviewComments) 
 - [无闻的go语言编码规范](https://github.com/Unknwon/go-code-convention/blob/master/zh-CN/README.md)
 - [high performance go workshop-by dave](https://dave.cheney.net/high-performance-go-workshop/dotgo-paris.html)  
-- [go性能优化](https://github.com/dgryski/go-perfbook)  [中文版](https://github.com/dgryski/go-perfbook/blob/master/performance-zh.md)
+- [go性能优化](https://github.com/dgryski/go-perfbook)  
+  - [中文版](https://github.com/dgryski/go-perfbook/blob/master/performance-zh.md)
 - [编写可维护 Go 语言代码建议](https://github.com/llitfkitfk/go-best-practice)
 - [go各种自学资料总结](https://github.com/overnote/golang)
-- [gocn每日新闻](https://github.com/gocn/news) [go news 二](https://github.com/Han-Ya-Jun/gocn_news_set)
+- [gocn每日新闻 一](https://github.com/gocn/news) 
+  - [go news 二](https://github.com/Han-Ya-Jun/gocn_news_set)
+- [go技术日报](https://studygolang.com/go/godaily)
+- [gopherdaily](https://github.com/bigwhite/gopherdaily)
+- [go语言爱好者周刊](https://github.com/polaris1119/golangweekly)
+- [Go夜读](https://github.com/talkgo/night)
+- [Go开发关键技术指南](https://github.com/ossrs/srs/wiki/GoDevGuide)
+- [go每日一库](https://github.com/darjun/go-daily-lib)
   
+- [golang-design](https://github.com/golang-design) changkun 大大最新开源的golang相关项目
+  - [golang-design site](https://golang.design/)
   
-
+- [List of Golang books](https://github.com/dariubs/GoBooks)
+ 
 [返回目录](#目录)
